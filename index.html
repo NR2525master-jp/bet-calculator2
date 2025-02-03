@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投資金額計算ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>投資金額計算ツール</h2>
+
+        <label for="loss">累積損失（円）:</label>
+        <input type="number" id="loss" placeholder="例: 3000">
+
+        <label for="profit">目標利益（円）:</label>
+        <input type="number" id="profit" placeholder="例: 1000">
+
+        <label for="odds">オッズ:</label>
+        <input type="number" id="odds" step="0.01" placeholder="例: 1.3">
+
+        <button onclick="calculateInvestment()">計算する</button>
+
+        <h3>必要な投資額: <span id="result">-</span> 円</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
